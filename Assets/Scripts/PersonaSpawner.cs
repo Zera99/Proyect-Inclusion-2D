@@ -5,7 +5,8 @@ using UnityEngine;
 public class PersonaSpawner : MonoBehaviour {
 
     public GameObject PersonaPrefab;
-    public List<Sprite> PersonaSprites;
+    public List<Sprite> AdultosSprites;
+    public List<Sprite> NiñosSprites;
     public List<Persona> spawnedPersonas;
     public float PersonaTimer;
     public float minX;
@@ -27,12 +28,28 @@ public class PersonaSpawner : MonoBehaviour {
                 Persona p = Instantiate(PersonaPrefab).GetComponent<Persona>();
                 spawnedPersonas.Add(p);
                 p.spawner = this;
-                int newIndex = lastSpriteIndex;
-                while (newIndex == lastSpriteIndex) {
-                    newIndex = Random.Range(0, PersonaSprites.Count);
+                p.isAdult = Random.Range(0, 2) == 0; // 0 inclusive, 2 exclusive, 0-1 range
+
+
+                if (p.isAdult) {
+                    int newIndex = lastSpriteIndex;
+                    while (newIndex == lastSpriteIndex) {
+                        newIndex = Random.Range(0, AdultosSprites.Count);
+                    }
+                    p.ChangeSprite(AdultosSprites[newIndex]);
+                    lastSpriteIndex = newIndex;
+
+
+                } else {
+                    int newIndex = lastSpriteIndex;
+                    while (newIndex == lastSpriteIndex) {
+                        newIndex = Random.Range(0, NiñosSprites.Count);
+                    }
+                    p.ChangeSprite(NiñosSprites[newIndex]);
+                    lastSpriteIndex = newIndex;
+
                 }
 
-                p.ChangeSprite(PersonaSprites[newIndex]);
                 switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
                     case 0: {
                         p.transform.position = new Vector3(minX, Random.Range(minY, maxY), 0);

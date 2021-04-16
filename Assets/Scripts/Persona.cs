@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Persona : MonoBehaviour {
     public bool hasIssue;
+    public bool isAdult;
     public QuestionImporter importer;
     PreguntaBase pregunta;
     public PreguntaMenu menu;

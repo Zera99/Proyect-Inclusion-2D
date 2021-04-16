@@ -28,18 +28,16 @@ public class QuestionImporter : MonoBehaviour {
         currentPersona = p;
         PreguntaBase toReturn;
         int randomIndex;
-        if (AllPreguntas.Preguntas.Count >= AllEstereotipos.Preguntas.Count) {
-            randomIndex = Random.Range(0, AllPreguntas.Preguntas.Count);
-            toReturn = AllPreguntas.Preguntas[randomIndex];
-        } else {
+
+        if(currentPersona.isAdult) {
             randomIndex = Random.Range(0, AllEstereotipos.Preguntas.Count);
             toReturn = AllEstereotipos.Preguntas[randomIndex];
+        } else {
+            randomIndex = Random.Range(0, AllPreguntas.Preguntas.Count);
+            toReturn = AllPreguntas.Preguntas[randomIndex];
         }
 
-        
-
         return toReturn;
-
     }
 
     public void PreguntaFinished() {
