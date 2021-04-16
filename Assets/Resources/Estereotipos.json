@@ -1,0 +1,16 @@
+{
+    "Preguntas": [{
+      "Pregunta": "Algo algo algo?",
+      "RespuestaCorrecta": "Bien",
+      "RespuestaA": "Mal",
+      "RespuestaB": "MalB",
+      "RespuestaC": "MalC"
+    },
+    {
+      "Pregunta": "Algo algo algo B?",
+      "RespuestaCorrecta": "Bien",
+      "RespuestaA": "Mal",
+      "RespuestaB": "No tan mal",
+      "RespuestaC": "Muy mal"
+    }]
+}
