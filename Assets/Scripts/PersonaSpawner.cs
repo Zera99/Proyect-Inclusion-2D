@@ -6,6 +6,7 @@ public class PersonaSpawner : MonoBehaviour {
 
     public GameObject PersonaPrefab;
     public List<Sprite> PersonaSprites;
+    public List<Persona> spawnedPersonas;
     public float PersonaTimer;
     public float minX;
     public float maxX;
@@ -13,7 +14,7 @@ public class PersonaSpawner : MonoBehaviour {
     public float maxY;
 
     bool isSpawning;
-    bool isAnswering;
+    public bool isAnswering;
     int lastSpriteIndex;
 
     private void Start() {
@@ -22,32 +23,37 @@ public class PersonaSpawner : MonoBehaviour {
 
     IEnumerator SpawnPersonCoroutine() {
         while (isSpawning) {
-            
-            Persona p = Instantiate(PersonaPrefab).GetComponent<Persona>();
-            p.spawner = this;
-            int newIndex = lastSpriteIndex;
-            while (newIndex == lastSpriteIndex) {
-                newIndex = Random.Range(0, PersonaSprites.Count);
-            }
-
-            p.ChangeSprite(PersonaSprites[newIndex]);
-            switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
-                case 0: {
-                    p.transform.position = new Vector3(minX, Random.Range(minY, maxY), 0);
-                    break;
-
+            if (!isAnswering) {
+                Persona p = Instantiate(PersonaPrefab).GetComponent<Persona>();
+                spawnedPersonas.Add(p);
+                p.spawner = this;
+                int newIndex = lastSpriteIndex;
+                while (newIndex == lastSpriteIndex) {
+                    newIndex = Random.Range(0, PersonaSprites.Count);
                 }
-                case 1: {
-                    p.transform.position = new Vector3(maxX, Random.Range(minY, maxY), 0);
-                    break;
+
+                p.ChangeSprite(PersonaSprites[newIndex]);
+                switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
+                    case 0: {
+                        p.transform.position = new Vector3(minX, Random.Range(minY, maxY), 0);
+                        break;
+
+                    }
+                    case 1: {
+                        p.transform.position = new Vector3(maxX, Random.Range(minY, maxY), 0);
+                        break;
+                    }
                 }
+
+                if (Random.Range(0, 2) == 0) {
+                    Debug.Log("Has issue");
+                    p.hasIssue = true;
+                }
+                yield return new WaitForSeconds(PersonaTimer);
             }
 
-            if (Random.Range(0, 2) == 0) {
-                p.hasIssue = true;
-            }
+            yield return new WaitForEndOfFrame();
 
-            yield return new WaitForSeconds(PersonaTimer);
         }
 
     }
@@ -60,5 +66,24 @@ public class PersonaSpawner : MonoBehaviour {
     public void FinishSpawning() {
         isSpawning = false;
         StopAllCoroutines();
+        // EndGame
+    }
+
+    public void StartAnswering() {
+        isAnswering = true;
+        foreach(Persona p in spawnedPersonas) {
+            p.speed = 0;
+        }
+    }
+
+    public void StopAnswering() {
+        isAnswering = false;
+        foreach (Persona p in spawnedPersonas) {
+            p.speed = p.maxSpeed;
+        }
+    }
+
+    public void RemovePersona(Persona p) {
+        spawnedPersonas.Remove(p);
     }
 }

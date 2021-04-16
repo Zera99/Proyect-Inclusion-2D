@@ -15,9 +15,10 @@ public class Respuesta : MonoBehaviour
         if(isCorrect) {
             Debug.Log("It's correct");
             scores.AddScore();
+            // Feedback Bueno
         } else {
+            // Feedback Malo
             Debug.Log("It's wrong");
-            scores.Wrong();
         }
 
         menu.Disappear();

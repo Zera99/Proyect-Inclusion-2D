@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2491ab7fd94951642aa2cd1e7691f4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerData: {fileID: 11400000, guid: dd54e85d2177c3d42a0dc617c1add621, type: 2}
 --- !u!1 &320795798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,36 +1115,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991957053}
   m_CullTransparentMesh: 0
---- !u!1 &1032470890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032470891}
-  m_Layer: 0
-  m_Name: Respuesta 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1032470891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032470890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045223056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,11 +1164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6ea8e7857703748b2f9146392e74b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAnswering: 0
   menu: {fileID: 20402424}
   PregText: {fileID: 320795800}
   firstOption: {fileID: 1494331123}
   secondOption: {fileID: 979558418}
   thirdOption: {fileID: 1090890504}
+  maxTime: 20
 --- !u!1 &1090890502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1690,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1585769619
 MonoBehaviour:
@@ -1736,8 +1709,10 @@ MonoBehaviour:
   PersonaSprites:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  PersonaTimer: 4
+  spawnedPersonas: []
+  PersonaTimer: 2
   minX: -13
   maxX: 13
   minY: -3.5
   maxY: 1.5
+  isAnswering: 0

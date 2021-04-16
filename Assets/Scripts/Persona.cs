@@ -13,46 +13,62 @@ public class Persona : MonoBehaviour {
 
     Vector3 Direction;
     public float maxSpeed;
-    float speed;
+    public float speed;
 
     private void Awake() {
         _sr = GetComponent<SpriteRenderer>();
         importer = FindObjectOfType<QuestionImporter>();
         menu = FindObjectOfType<PreguntaMenu>();
 
-        if(transform.position.x > 0) {
+
+    }
+
+    private void Start() {
+
+        speed = maxSpeed;
+
+        if (hasIssue) {
+            pregunta = importer.GetPregunta(this);
+        }
+
+        if (transform.position.x > 0) {
             Direction = Vector3.left;
         } else {
             Direction = Vector3.right;
         }
     }
 
-    private void Start() {
-        Destroy(this.gameObject, 10.0f);
-        if(hasIssue) {
-            pregunta = importer.GetPregunta(this);
-            speed = maxSpeed;
+    private void Update() {
+        transform.position += Direction * speed * Time.deltaTime;
+
+        if (transform.position.x > spawner.maxX || transform.position.x < spawner.minX) {
+            StartCoroutine(DespawnPersona());
         }
     }
 
-    private void Update() {
-        transform.position += Direction * speed * Time.deltaTime;
-    }
-
     public void StartQuestion() {
-        speed = 0;
         Debug.Log("Pregunta pregunta pregunta");
-        menu.Appear(pregunta, this);
+        if (!menu.isAnswering) {
+            spawner.StartAnswering();
+            menu.Appear(pregunta, this);
+        }
+
     }
 
     public void FinishQuestion() {
         speed = maxSpeed;
+        spawner.StopAnswering();
+        importer.RemovePregunta(this.pregunta);
     }
 
     public void ChangeSprite(Sprite newSprite) {
         _sr.sprite = newSprite;
     }
 
-
+    IEnumerator DespawnPersona() {
+        yield return new WaitForSeconds(2.0f);
+        spawner.RemovePersona(this);
+        Destroy(this.gameObject);
+    }
 
 }

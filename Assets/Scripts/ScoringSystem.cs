@@ -3,33 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoringSystem : MonoBehaviour {
-    float _totalScore;
-    float timeLeft;
-    float maxTime;
-    bool isInQuestion;
+    public PlayerSO PlayerData;
 
-    public float TotalScore { get; set; }
-
-
-    private void Update() {
-        if(isInQuestion) {
-            timeLeft -= Time.deltaTime;
-            if(timeLeft <= 0) {
-                Wrong();
-            }
-        }
+    private void Awake() {
+        PlayerData.Init();
     }
-
 
     public void AddScore() {
-        TotalScore += timeLeft;
+        PlayerData.TotalScore++;
+
     }
 
-    public void Wrong() {
-        ResetTimer();
-    }
-
-    void ResetTimer() {
-        timeLeft = maxTime;
-    }
 }

@@ -26,11 +26,17 @@ public class QuestionImporter : MonoBehaviour {
 
     public PreguntaBase GetPregunta(Persona p) {
         currentPersona = p;
-        int randomIndex = Random.Range(0, AllPreguntas.Preguntas.Count);
-        PreguntaBase toReturn = AllPreguntas.Preguntas[randomIndex];
-        AllPreguntas.Preguntas.RemoveAt(randomIndex);
-        if (AllPreguntas.Preguntas.Count == 0 && AllEstereotipos.Preguntas.Count == 0)
-            personaSpawner.FinishSpawning();
+        PreguntaBase toReturn;
+        int randomIndex;
+        if (AllPreguntas.Preguntas.Count >= AllEstereotipos.Preguntas.Count) {
+            randomIndex = Random.Range(0, AllPreguntas.Preguntas.Count);
+            toReturn = AllPreguntas.Preguntas[randomIndex];
+        } else {
+            randomIndex = Random.Range(0, AllEstereotipos.Preguntas.Count);
+            toReturn = AllEstereotipos.Preguntas[randomIndex];
+        }
+
+        
 
         return toReturn;
 
@@ -40,4 +46,15 @@ public class QuestionImporter : MonoBehaviour {
         currentPersona.FinishQuestion();
     }
 
+
+    public void RemovePregunta(PreguntaBase p) {
+        if(AllPreguntas.Preguntas.Contains(p)) {
+            AllPreguntas.Preguntas.Remove(p);
+        } else if(AllEstereotipos.Preguntas.Contains(p)) {
+            AllEstereotipos.Preguntas.Remove(p);
+        }
+
+        if (AllPreguntas.Preguntas.Count == 0 && AllEstereotipos.Preguntas.Count == 0)
+            personaSpawner.FinishSpawning();
+    }
 }
