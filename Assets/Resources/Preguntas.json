@@ -1,16 +1,72 @@
 {
     "Preguntas": [{
-      "Pregunta": "Algo algo algo?",
-      "RespuestaCorrecta": "Bien",
-      "RespuestaA": "Mal",
-      "RespuestaB": "MalB",
+      "Pregunta": "¿Por qué mi papá piensa que es “de raro” abrazar a mi amigo?",
+      "RespuestaCorrecta": "Ser afectivo con los demás no tiene nada de malo",
+      "RespuestaA": "Las muestras de cariño entre hombres no existen",
+      "RespuestaB": "Está celoso",
       "RespuestaC": "MalC"
     },
     {
-      "Pregunta": "Algo algo algo B?",
-      "RespuestaCorrecta": "Bien",
-      "RespuestaA": "Mal",
-      "RespuestaB": "No tan mal",
+      "Pregunta": "¿Por qué mi papá escucha las opiniones de mi hermano y no las mías?",
+      "RespuestaCorrecta": "Tiene la creencia equivocada que las opiniones de los hombres son más importantes",
+      "RespuestaA": "Son más divertidas",
+      "RespuestaB": "No escuchó que tenías opiniones",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué mis compañeros me cargan porque no me gusta el futbol?",
+      "RespuestaCorrecta": "Sus padres les dijeron que el futbol es cosa de hombres",
+      "RespuestaA": "No conocen otro deporte",
+      "RespuestaB": "No saben que deporte te gusta",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Está bien que mi vecino tenga dos mamás?",
+      "RespuestaCorrecta": "Está perfecto, la familia está compuesta por personas que te aman",
+      "RespuestaA": "Quizás el papá está de viaje",
+      "RespuestaB": "Capaz a él no le molesta",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué mis vecinos me cargan si uso mi remera rosa?",
+      "RespuestaCorrecta": "Los colores no tienen género, usa lo que te guste más",
+      "RespuestaA": "Capaz no te queda bien",
+      "RespuestaB": "Tienen celos",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué mi familia se enoja que sea amigo de alguien de la villa?",
+      "RespuestaCorrecta": "La amistad va más allá del origen de las personas",
+      "RespuestaA": "Vive lejos",
+      "RespuestaB": "Es porque no lo conocen",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué no me dejan tener el pelo corto?",
+      "RespuestaCorrecta": "Es tu pelo y tu decisión, tu felicidad es lo que cuenta",
+      "RespuestaA": "Solo los chicos se cortan el pelo corto",
+      "RespuestaB": "Quizás te queda mal",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué mi papá se enoja si mi mamá no limpia?",
+      "RespuestaCorrecta": "No es obligación de la mujer la limpieza, todos los que viven ahí tiene que aportar",
+      "RespuestaA": "Sale cansado del trabajo",
+      "RespuestaB": "No sabe limpiar",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Por qué hay mujeres que después se convierten en hombres?",
+      "RespuestaCorrecta": "Se dieron cuenta de que esa era su verdadera identidad",
+      "RespuestaA": "Van a una fiesta de disfraces",
+      "RespuestaB": "Son magas",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "¿Las mujeres nacen mujeres y los hombres nacen hombres?",
+      "RespuestaCorrecta": "Falso, la identidad de uno se descubre con el tiempo",
+      "RespuestaA": "Así me lo enseñaron en el colegio",
+      "RespuestaB": "Según algunos libros, si",
       "RespuestaC": "Muy mal"
     }]
 }

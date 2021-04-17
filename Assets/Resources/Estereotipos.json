@@ -1,16 +1,72 @@
 {
     "Preguntas": [{
-      "Pregunta": "Algo algo algo?",
-      "RespuestaCorrecta": "Bien",
-      "RespuestaA": "Mal",
-      "RespuestaB": "MalB",
+      "Pregunta": "¿Para qué voy a dejar que mi esposa trabaje si ya trabajo yo?",
+      "RespuestaCorrecta": "Ella puede decidir hacer lo que le haga más feliz",
+      "RespuestaA": "Deberías convencerla de que no trabaje",
+      "RespuestaB": "Quizás está aburrida",
       "RespuestaC": "MalC"
     },
     {
-      "Pregunta": "Algo algo algo B?",
-      "RespuestaCorrecta": "Bien",
-      "RespuestaA": "Mal",
-      "RespuestaB": "No tan mal",
+      "Pregunta": "Mi familia piensa que soy raro (gay) porque no tengo novia",
+      "RespuestaCorrecta": "Es un asunto personal y solo vos podés decir si querés o no",
+      "RespuestaA": "Tenés que esforzarte por conocer a alguien",
+      "RespuestaB": "Capaz piensan que te sentís solo",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "El futbol es para hombres",
+      "RespuestaCorrecta": "Los deportes son para todos",
+      "RespuestaA": "Solo conozco a hombres que lo juegan",
+      "RespuestaB": "Me gusta más el tenis",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Es raro si un hombre es amo de casa",
+      "RespuestaCorrecta": "Mantener una casa no tiene nada que ver con el género",
+      "RespuestaA": "Se quedó sin trabajo",
+      "RespuestaB": "Capaz ayuda a su esposa",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Mi familia se ríe si hablo de forma inclusiva",
+      "RespuestaCorrecta": "Esforzarte por incluir a todos no es algo de risa",
+      "RespuestaA": "Solo lo hacen para molestarte",
+      "RespuestaB": "Quizás no te entienden",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Me parece raro que mi hermano salga con otro hombre",
+      "RespuestaCorrecta": "El amor no tiene género, lo que importa es la felicidad",
+      "RespuestaA": "Quizás son solo amigos ",
+      "RespuestaB": "Quizás no encontró a la mujer indicada",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "No entiendo cómo puede haber gente que quiera estar soltera",
+      "RespuestaCorrecta": "Las personas pueden disfrutar su vida sin necesidad de una relación",
+      "RespuestaA": "Quizás todavía no conocen al indicado",
+      "RespuestaB": "No tienen tiempo",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Quiero que mi novia solo me hable a mí",
+      "RespuestaCorrecta": "Ser celoso sólo va a hacer que se aleje",
+      "RespuestaA": "Si se lo pedís, capaz lo haga",
+      "RespuestaB": "Capaz está aburrida",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Todas las mujeres tienen que ser mamás algún día",
+      "RespuestaCorrecta": "Ser mamá es un deseo, no una obligación",
+      "RespuestaA": "Sólo cuando se casen",
+      "RespuestaB": "A veces tarda pero siempre llega",
+      "RespuestaC": "Muy mal"
+    },
+	 {
+      "Pregunta": "Solo existen dos géneros",
+      "RespuestaCorrecta": "Las personas pueden identificarse de más de dos maneras",
+      "RespuestaA": "Solo se ven dos géneros",
+      "RespuestaB": "Según algunos libros, si",
       "RespuestaC": "Muy mal"
     }]
 }
