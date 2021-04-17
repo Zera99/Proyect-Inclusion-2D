@@ -11,7 +11,6 @@ public class Persona : MonoBehaviour {
     public PersonaSpawner spawner;
 
     SpriteRenderer _sr;
-    public GameObject Globito;
 
     Vector3 Direction;
     public float maxSpeed;
@@ -37,7 +36,6 @@ public class Persona : MonoBehaviour {
             Direction = Vector3.left;
         } else {
             Direction = Vector3.right;
-            FlipGlobito();
         }
     }
 
@@ -72,10 +70,6 @@ public class Persona : MonoBehaviour {
         yield return new WaitForSeconds(2.0f);
         spawner.RemovePersona(this);
         Destroy(this.gameObject);
-    }
-
-    public void FlipGlobito() {
-        Globito.transform.position = new Vector3(Globito.transform.position.x * -1, Globito.transform.position.y, Globito.transform.position.z);
     }
 
 }
