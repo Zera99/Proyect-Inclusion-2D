@@ -11,8 +11,7 @@ public class PersonaSpawner : MonoBehaviour {
     public float PersonaTimer;
     public float minX;
     public float maxX;
-    public float minY;
-    public float maxY;
+    public List<float> yPositions;
 
     bool isSpawning;
     public bool isAnswering;
@@ -28,36 +27,36 @@ public class PersonaSpawner : MonoBehaviour {
                 Persona p = Instantiate(PersonaPrefab).GetComponent<Persona>();
                 spawnedPersonas.Add(p);
                 p.spawner = this;
+
                 p.isAdult = Random.Range(0, 2) == 0; // 0 inclusive, 2 exclusive, 0-1 range
 
+                //if (p.isAdult) {
+                //    int newIndex = lastSpriteIndex;
+                //    while (newIndex == lastSpriteIndex) {
+                //        newIndex = Random.Range(0, AdultosSprites.Count);
+                //    }
+                //    p.ChangeSprite(AdultosSprites[newIndex]);
+                //    lastSpriteIndex = newIndex;
 
-                if (p.isAdult) {
-                    int newIndex = lastSpriteIndex;
-                    while (newIndex == lastSpriteIndex) {
-                        newIndex = Random.Range(0, AdultosSprites.Count);
-                    }
-                    p.ChangeSprite(AdultosSprites[newIndex]);
-                    lastSpriteIndex = newIndex;
 
+                //} else {
+                //    int newIndex = lastSpriteIndex;
+                //    while (newIndex == lastSpriteIndex) {
+                //        newIndex = Random.Range(0, NiñosSprites.Count);
+                //    }
+                //    p.ChangeSprite(NiñosSprites[newIndex]);
+                //    lastSpriteIndex = newIndex;
 
-                } else {
-                    int newIndex = lastSpriteIndex;
-                    while (newIndex == lastSpriteIndex) {
-                        newIndex = Random.Range(0, NiñosSprites.Count);
-                    }
-                    p.ChangeSprite(NiñosSprites[newIndex]);
-                    lastSpriteIndex = newIndex;
-
-                }
+                //}
 
                 switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
                     case 0: {
-                        p.transform.position = new Vector3(minX, Random.Range(minY, maxY), 0);
+                        p.transform.position = new Vector3(minX, yPositions[Random.Range(0, yPositions.Count)], 0);
                         break;
 
                     }
                     case 1: {
-                        p.transform.position = new Vector3(maxX, Random.Range(minY, maxY), 0);
+                        p.transform.position = new Vector3(maxX, yPositions[Random.Range(0, yPositions.Count)], 0);
                         break;
                     }
                 }
