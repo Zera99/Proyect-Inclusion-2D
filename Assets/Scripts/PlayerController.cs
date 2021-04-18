@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 
     Persona target;
     public ScoringSystem Score;
-    PlayerSO playerData;
+    public PlayerSO playerData;
 
     void OnMouseEnter() {
         if(playerData.cursorTexture != null)

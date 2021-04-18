@@ -24,24 +24,31 @@ public class PersonaSpawner : MonoBehaviour {
     }
 
     IEnumerator SpawnPersonCoroutine() {
+        int internalCounter = 0;
+        int counterTarget = Random.Range(0, 3);
+        bool spawnedAdult = false;
         while (isSpawning) {
             if (!isAnswering) {
                 Persona p = Instantiate(PersonaPrefab).GetComponent<Persona>();
+                internalCounter++;
                 spawnedPersonas.Add(p);
                 p.spawner = this;
 
-                p.isAdult = Random.Range(0, 2) == 0; // 0 inclusive, 2 exclusive, 0-1 range
+                if(!spawnedAdult) {
+                    p.isAdult = true;
+                    spawnedAdult = true;
+                    if (p.isAdult) {
+                        int newIndex = lastSpriteIndex;
+                        while (newIndex == lastSpriteIndex) {
+                            newIndex = Random.Range(0, AdultosSprites.Count);
+                        }
+                        p.ChangeSprite(AdultosSprites[newIndex], AdultosAnim[newIndex]);
+                        lastSpriteIndex = newIndex;
 
-                if (p.isAdult) {
-                    int newIndex = lastSpriteIndex;
-                    while (newIndex == lastSpriteIndex) {
-                        newIndex = Random.Range(0, AdultosSprites.Count);
                     }
-                    p.ChangeSprite(AdultosSprites[newIndex], AdultosAnim[newIndex]);
-                    lastSpriteIndex = newIndex;
-
-
                 } else {
+                    p.isAdult = false;
+                    spawnedAdult = false;
                     int newIndex = lastSpriteIndex;
                     while (newIndex == lastSpriteIndex) {
                         newIndex = Random.Range(0, NiñosSprites.Count);
@@ -49,6 +56,13 @@ public class PersonaSpawner : MonoBehaviour {
                     p.ChangeSprite(NiñosSprites[newIndex], NiñosAnim[newIndex]);
                     lastSpriteIndex = newIndex;
 
+                }
+                Debug.Log("Int: " + internalCounter + " - Count: " + counterTarget);
+                if (internalCounter == counterTarget) {
+                    Debug.Log("Has issue");
+                    p.hasIssue = true;
+                    internalCounter = 0;
+                    counterTarget = Random.Range(0, 3);
                 }
 
                 switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
@@ -63,10 +77,6 @@ public class PersonaSpawner : MonoBehaviour {
                     }
                 }
 
-                if (Random.Range(0, 2) == 0) {
-                    Debug.Log("Has issue");
-                    p.hasIssue = true;
-                }
                 yield return new WaitForSeconds(PersonaTimer);
             }
 
