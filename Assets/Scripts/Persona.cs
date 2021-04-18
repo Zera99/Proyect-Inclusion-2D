@@ -11,13 +11,20 @@ public class Persona : MonoBehaviour {
     public PersonaSpawner spawner;
 
     SpriteRenderer _sr;
+    public GameObject globito;
 
     Vector3 Direction;
     public float maxSpeed;
     public float speed;
+    bool isFlipped;
+    Animator _anim;
+    Animator globitoAnimator;
+
 
     private void Awake() {
         _sr = GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
+        globitoAnimator = globito.GetComponent<Animator>();
         importer = FindObjectOfType<QuestionImporter>();
         menu = FindObjectOfType<PreguntaMenu>();
 
@@ -29,13 +36,29 @@ public class Persona : MonoBehaviour {
         speed = maxSpeed;
 
         if (hasIssue) {
+            globito.SetActive(true);
             pregunta = importer.GetPregunta(this);
+            if (isAdult) {
+                globitoAnimator.Play("GlobitoEstereotipo");
+            } else {
+                globitoAnimator.Play("GlobitoPregunta");
+            }
         }
 
         if (transform.position.x > 0) {
             Direction = Vector3.left;
         } else {
             Direction = Vector3.right;
+            FlipGlobito();
+            if (hasIssue) {
+                if (isAdult) {
+                    globito.GetComponent<SpriteRenderer>().flipX = true;
+                    globitoAnimator.Play("GlobitoEstereotipo");
+                } else {
+                    globitoAnimator.Play("GlobitoPreguntaReverse");
+                }
+            }
+
         }
     }
 
@@ -62,14 +85,30 @@ public class Persona : MonoBehaviour {
         importer.RemovePregunta(this.pregunta);
     }
 
-    public void ChangeSprite(Sprite newSprite) {
+    public void ChangeSprite(Sprite newSprite, AnimationClip clip) {
         _sr.sprite = newSprite;
+        _anim.Play(clip.name);
     }
 
     IEnumerator DespawnPersona() {
         yield return new WaitForSeconds(2.0f);
         spawner.RemovePersona(this);
         Destroy(this.gameObject);
+    }
+
+    void FlipGlobito() {
+        globito.transform.localPosition = new Vector3(globito.transform.localPosition.x * -1, globito.transform.localPosition.y, globito.transform.localPosition.z);
+        _sr.flipX = true;
+        isFlipped = true;
+
+
+    }
+
+    public void FeedbackBueno() {
+        if (isFlipped) {
+            globito.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        globitoAnimator.Play("GlobitoCorrecto");
     }
 
 }

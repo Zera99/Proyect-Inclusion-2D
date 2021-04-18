@@ -29,7 +29,7 @@ public class PreguntaMenu : MonoBehaviour {
         if (isAnswering) {
             timeLeft -= Time.deltaTime;
             if (timeLeft <= 0) {
-                Disappear();
+                Disappear(false);
             }
         }
     }
@@ -76,11 +76,15 @@ public class PreguntaMenu : MonoBehaviour {
 
     }
 
-    public void Disappear() {
+    public void Disappear(bool correct) {
         isAnswering = false;
         currentPersona.FinishQuestion();
         menu.gameObject.SetActive(false);
         timeLeft = maxTime;
+
+        if(correct) {
+            currentPersona.FeedbackBueno();
+        }
     }
 
 }

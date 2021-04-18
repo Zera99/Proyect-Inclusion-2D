@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PersonaSpawner : MonoBehaviour {
 
     public GameObject PersonaPrefab;
     public List<Sprite> AdultosSprites;
+    public List<AnimationClip> AdultosAnim;
     public List<Sprite> NiñosSprites;
+    public List<AnimationClip> NiñosAnim;
     public List<Persona> spawnedPersonas;
     public float PersonaTimer;
     public float minX;
@@ -30,24 +32,24 @@ public class PersonaSpawner : MonoBehaviour {
 
                 p.isAdult = Random.Range(0, 2) == 0; // 0 inclusive, 2 exclusive, 0-1 range
 
-                //if (p.isAdult) {
-                //    int newIndex = lastSpriteIndex;
-                //    while (newIndex == lastSpriteIndex) {
-                //        newIndex = Random.Range(0, AdultosSprites.Count);
-                //    }
-                //    p.ChangeSprite(AdultosSprites[newIndex]);
-                //    lastSpriteIndex = newIndex;
+                if (p.isAdult) {
+                    int newIndex = lastSpriteIndex;
+                    while (newIndex == lastSpriteIndex) {
+                        newIndex = Random.Range(0, AdultosSprites.Count);
+                    }
+                    p.ChangeSprite(AdultosSprites[newIndex], AdultosAnim[newIndex]);
+                    lastSpriteIndex = newIndex;
 
 
-                //} else {
-                //    int newIndex = lastSpriteIndex;
-                //    while (newIndex == lastSpriteIndex) {
-                //        newIndex = Random.Range(0, NiñosSprites.Count);
-                //    }
-                //    p.ChangeSprite(NiñosSprites[newIndex]);
-                //    lastSpriteIndex = newIndex;
+                } else {
+                    int newIndex = lastSpriteIndex;
+                    while (newIndex == lastSpriteIndex) {
+                        newIndex = Random.Range(0, NiñosSprites.Count);
+                    }
+                    p.ChangeSprite(NiñosSprites[newIndex], NiñosAnim[newIndex]);
+                    lastSpriteIndex = newIndex;
 
-                //}
+                }
 
                 switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
                     case 0: {
@@ -82,7 +84,7 @@ public class PersonaSpawner : MonoBehaviour {
     public void FinishSpawning() {
         isSpawning = false;
         StopAllCoroutines();
-        // EndGame
+        StartCoroutine(EndLevel());
     }
 
     public void StartAnswering() {
@@ -101,5 +103,10 @@ public class PersonaSpawner : MonoBehaviour {
 
     public void RemovePersona(Persona p) {
         spawnedPersonas.Remove(p);
+    }
+
+    IEnumerator EndLevel() {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

@@ -16,11 +16,14 @@ public class Respuesta : MonoBehaviour
             Debug.Log("It's correct");
             scores.AddScore();
             // Feedback Bueno
+            menu.Disappear(true);
+
         } else {
             // Feedback Malo
             Debug.Log("It's wrong");
+            menu.Disappear(false);
+
         }
 
-        menu.Disappear();
     }
 }

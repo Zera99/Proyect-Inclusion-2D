@@ -6,10 +6,11 @@ public class PlayerController : MonoBehaviour {
 
     Persona target;
     public ScoringSystem Score;
+    PlayerSO playerData;
 
     // Start is called before the first frame update
     void Start() {
-
+        // Setear Cursor
     }
 
     // Update is called once per frame

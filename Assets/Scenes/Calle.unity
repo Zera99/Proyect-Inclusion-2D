@@ -6861,8 +6861,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PersonaPrefab: {fileID: 7387243726311595413, guid: 12c439c09517d7f4184fe2248e632e74,
     type: 3}
-  AdultosSprites: []
-  "Ni\xF1osSprites": []
+  AdultosSprites:
+  - {fileID: 5719498069321192677, guid: 3e5ffcc22d901e44da8abebc0d6e3ce9, type: 3}
+  - {fileID: -252659663310723391, guid: e96872326348b01459aae4112a50414c, type: 3}
+  - {fileID: -3112923952593381641, guid: 6860f34bbe40ebe48bae2eec9f12ae0a, type: 3}
+  - {fileID: 2839049816791075584, guid: 12ea57b49c4bcf9438de10b5aac50d29, type: 3}
+  - {fileID: -4367471133148686871, guid: 3c3b4477c3268f945b43f18087d6dbae, type: 3}
+  - {fileID: -8257818456349246596, guid: 16813286da5000649b8d7c3fef684728, type: 3}
+  - {fileID: 5600401537281190981, guid: cd733fe9625a8b9459db2f87c411cee0, type: 3}
+  - {fileID: -5674790872310231125, guid: 65712494ec2e3cf41994313b493b3b36, type: 3}
+  - {fileID: 1178144400360972258, guid: b18858ae6a07de34e9379b210b16d42e, type: 3}
+  - {fileID: -5874447209833356678, guid: 98a14b209d70eb145acca7d376e75303, type: 3}
+  - {fileID: 7093822971857530634, guid: 0467ba2c14a2abd40ab53f169c8dc969, type: 3}
+  - {fileID: -8774326712575131898, guid: 5c724cfa5ccad9e439fe9747793383c4, type: 3}
+  - {fileID: 821475213548749571, guid: 9b65e18acb35ef44fbd29df58a6ded46, type: 3}
+  - {fileID: 6122504618933035100, guid: 50465fd507e8e764f965e6579e4f6c6a, type: 3}
+  - {fileID: 958935901291460867, guid: a278c5a18f8041d43958159802fa1514, type: 3}
+  - {fileID: 6060885348657289144, guid: dc9ef32a111e72142b7660c04773004a, type: 3}
+  - {fileID: -3961040331306980551, guid: 924570d4f33bc3342ae3c80973e43cac, type: 3}
+  - {fileID: 1121641456770189401, guid: f272d5a088bc2804b80cb88b8c65af3e, type: 3}
+  - {fileID: 4113720692318812992, guid: f38c600b69f797e49a58f61f765c64c2, type: 3}
+  - {fileID: -2392742774327928283, guid: 353febe38d6c8e245a6eedc55fffc98f, type: 3}
+  - {fileID: 8196239570595248816, guid: 5201122c4e4895d479bdb22b053f5900, type: 3}
+  - {fileID: -9139860832876833745, guid: 4934506531422e94d97a995300067b50, type: 3}
+  - {fileID: -3423457053651302174, guid: 73d085399f102fd4da82f8e33d4ef811, type: 3}
+  - {fileID: -6978328775612549681, guid: 4d88cca90793fc449b7b005d957cc9af, type: 3}
+  - {fileID: -7254376776131472895, guid: 16a15144e899893428339f61c19867a8, type: 3}
+  AdultosAnim:
+  - {fileID: 7400000, guid: f5b93825072fa0942bd99970ce6a16fe, type: 2}
+  - {fileID: 7400000, guid: 2d4f29acafcec7045ae2303778f930fb, type: 2}
+  - {fileID: 7400000, guid: 60c97d047fec23648bab4f90183f6bc6, type: 2}
+  - {fileID: 7400000, guid: 54f4f058a81521a44a1af08c1ff22b3d, type: 2}
+  - {fileID: 7400000, guid: 5e67077b03409fd4b837c8aea676b7cf, type: 2}
+  - {fileID: 7400000, guid: 844049f9932f49649b7a4f6076bb167b, type: 2}
+  - {fileID: 7400000, guid: 4aa0a93cb2b7e884fa3183956548034d, type: 2}
+  - {fileID: 7400000, guid: f514b804be21c2343b8eeed42dc409a6, type: 2}
+  - {fileID: 7400000, guid: 792599eb1f4dcb34fbbcbd666dcf7b78, type: 2}
+  - {fileID: 7400000, guid: d26b8608641ca8a45911c11cabdf05ef, type: 2}
+  - {fileID: 7400000, guid: 33c2a50d63b5fcf42aef2e6e474970c1, type: 2}
+  - {fileID: 7400000, guid: a7982c0e090f3034282ec100d86494a7, type: 2}
+  - {fileID: 7400000, guid: 0034d5b6af12e974fbe7bdc75f7474a1, type: 2}
+  - {fileID: 7400000, guid: ecc57b6d34c21ca458ba9ce2b8399834, type: 2}
+  - {fileID: 7400000, guid: efeb62e5d09d8ca4b80170a95815d7f3, type: 2}
+  - {fileID: 7400000, guid: 6fc776993a20c634493719c82598e9fb, type: 2}
+  - {fileID: 7400000, guid: 9c3167aedb5df644ba5ce16f498848b9, type: 2}
+  - {fileID: 7400000, guid: 99dbc42d010d6fb4da63bdfdf44492a2, type: 2}
+  - {fileID: 7400000, guid: 46c4c1b85c4e3ca4d85e76eba09087c0, type: 2}
+  - {fileID: 7400000, guid: 8d81cf33b7e7ff848a444a01d65f981b, type: 2}
+  - {fileID: 7400000, guid: 5aeef864888296b46853d22fdab89ae1, type: 2}
+  - {fileID: 7400000, guid: 64e14b828edbc354785184a0ad755c97, type: 2}
+  - {fileID: 7400000, guid: 328631a385478a84f8a07188e746c20c, type: 2}
+  - {fileID: 7400000, guid: bba6cc0060a82bc4195beb18fe61dd23, type: 2}
+  - {fileID: 7400000, guid: 1836c77724c9741438478e83ba0edc0f, type: 2}
+  "Ni\xF1osSprites":
+  - {fileID: 312450392302958019, guid: 7ea0875615d8b5a4fa78daff6c1e2f2d, type: 3}
+  - {fileID: -4923289592037925572, guid: 39e09d6d532b8ed4a87f70059072270a, type: 3}
+  - {fileID: 1191621453134278623, guid: 81ad20e2d784eb34fb35d4a8cdedc787, type: 3}
+  - {fileID: 6351458181661705780, guid: f1b00094fadadee42abb907314dff8a1, type: 3}
+  - {fileID: 4764649051315616645, guid: 2ce85ab02a8a37d4b8f0a4e1703075d9, type: 3}
+  - {fileID: -6911480042220836742, guid: 8b25267eb21676c4aa15d8498933782b, type: 3}
+  - {fileID: -3107626656117113593, guid: 58ee0e8fe9c80e24086a72abc3e642f3, type: 3}
+  - {fileID: 4253539203857467331, guid: 66035933796d601488a4d4bf4aefc12c, type: 3}
+  - {fileID: -6580867928899678488, guid: b26bc75577af3ae47a7ffe39284b406c, type: 3}
+  - {fileID: 528980005458871102, guid: 6cf06b393c67c8445ae1c610d1490094, type: 3}
+  "Ni\xF1osAnim":
+  - {fileID: 7400000, guid: 3f207ea6e0ecb8f479db21a38691c498, type: 2}
+  - {fileID: 7400000, guid: f597a870068333a48ade1f8d62101c6f, type: 2}
+  - {fileID: 7400000, guid: 97060e222e0cd8d48ad2ed7a0fa3dfcb, type: 2}
+  - {fileID: 7400000, guid: ad8ace053515cf648a0c14c61906001c, type: 2}
+  - {fileID: 7400000, guid: 1d776a0e6a375a34fa4f9b302ea8d2f7, type: 2}
+  - {fileID: 7400000, guid: 58179bd753f33c648b69ffdb83123d15, type: 2}
+  - {fileID: 7400000, guid: cabda0ca7b4151240aeb80996ef5b8a8, type: 2}
+  - {fileID: 7400000, guid: 0f061dae577186e4db9c306ea1ffa8d7, type: 2}
+  - {fileID: 7400000, guid: 3a84be8f1840946479cb1db9ddb31a50, type: 2}
+  - {fileID: 7400000, guid: 2f0f28c08d26abb418a4d722078eb413, type: 2}
   spawnedPersonas: []
   PersonaTimer: 2
   minX: -13
