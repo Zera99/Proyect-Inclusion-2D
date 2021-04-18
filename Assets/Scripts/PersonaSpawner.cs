@@ -58,7 +58,7 @@ public class PersonaSpawner : MonoBehaviour {
 
                 }
                 Debug.Log("Int: " + internalCounter + " - Count: " + counterTarget);
-                if (internalCounter == counterTarget) {
+                if (internalCounter >= counterTarget) {
                     Debug.Log("Has issue");
                     p.hasIssue = true;
                     internalCounter = 0;

@@ -97,7 +97,7 @@ public class Persona : MonoBehaviour {
     }
 
     void FlipGlobito() {
-        globito.transform.localPosition = new Vector3(globito.transform.localPosition.x * -1, globito.transform.localPosition.y, globito.transform.localPosition.z);
+        globito.transform.localPosition = new Vector3(globito.transform.localPosition.x * -1 + 0.055f, globito.transform.localPosition.y, globito.transform.localPosition.z);
         _sr.flipX = true;
         isFlipped = true;
 
