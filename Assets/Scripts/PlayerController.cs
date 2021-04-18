@@ -8,6 +8,15 @@ public class PlayerController : MonoBehaviour {
     public ScoringSystem Score;
     PlayerSO playerData;
 
+    void OnMouseEnter() {
+        if(playerData.cursorTexture != null)
+            Cursor.SetCursor(playerData.cursorTexture, Vector2.zero, CursorMode.Auto);
+    }
+
+    void OnMouseExit() {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
+
     // Start is called before the first frame update
     void Start() {
         // Setear Cursor

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroCutscene.unity
     guid: 9581949ae1acb5b4eb9e35909da90d0c
   - enabled: 1
+    path: Assets/Scenes/IconSelection.unity
+    guid: 6f00eb901b1ebf346bd7b3cf8f0e3e05
+  - enabled: 1
     path: Assets/Scenes/Calle.unity
     guid: fe843f13da3be4b47b8144b18573674f
   - enabled: 1

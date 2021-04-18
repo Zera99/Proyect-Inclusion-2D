@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CursorChoice : MonoBehaviour
 {
-    PlayerSO playerData;
+    public PlayerSO playerData;
     public Texture2D myTexture;
 
     public void OnClick() {
         playerData.cursorTexture = myTexture;
+        Cursor.SetCursor(playerData.cursorTexture, Vector2.zero, CursorMode.Auto);
     }
 }
