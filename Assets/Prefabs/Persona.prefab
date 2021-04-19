@@ -131,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 7387243726311595413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 8353584765434068493}
   m_Father: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   menu: {fileID: 0}
   spawner: {fileID: 0}
   globito: {fileID: 5461466044909206651}
-  maxSpeed: 5
+  maxSpeed: 3
   speed: 0
 --- !u!212 &7387243726311595408
 SpriteRenderer:
