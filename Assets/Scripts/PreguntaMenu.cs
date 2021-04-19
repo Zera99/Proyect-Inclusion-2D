@@ -18,6 +18,9 @@ public class PreguntaMenu : MonoBehaviour {
     float timeLeft;
     public float maxTime;
 
+    public AudioClip goodFeedback;
+    public AudioClip badFeedback;
+    public AudioSource source;
 
     private void Awake() {
         timeLeft = maxTime;
@@ -84,7 +87,12 @@ public class PreguntaMenu : MonoBehaviour {
 
         if(correct) {
             currentPersona.FeedbackBueno();
+            source.PlayOneShot(goodFeedback);
+        } else {
+            source.PlayOneShot(badFeedback);
         }
+
+
     }
 
 }

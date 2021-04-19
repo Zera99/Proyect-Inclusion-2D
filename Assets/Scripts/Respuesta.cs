@@ -10,6 +10,7 @@ public class Respuesta : MonoBehaviour
     public bool isCorrect;
     public TMPro.TextMeshProUGUI RespText;
 
+
     public void OnClick(PreguntaMenu menu) {
 
         if(isCorrect) {
