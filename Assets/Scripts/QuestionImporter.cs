@@ -40,11 +40,6 @@ public class QuestionImporter : MonoBehaviour {
         return toReturn;
     }
 
-    public void PreguntaFinished() {
-        currentPersona.FinishQuestion();
-    }
-
-
     public void RemovePregunta(PreguntaBase p) {
         if(AllPreguntas.Preguntas.Contains(p)) {
             AllPreguntas.Preguntas.Remove(p);

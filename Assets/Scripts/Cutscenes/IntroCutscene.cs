@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using RedBlueGames.Tools.TextTyper;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,10 @@ public class IntroCutscene : MonoBehaviour {
     int index;
     int sceneIndex;
     bool isDone;
+
+    public TextTyper typer;
+    public float DelayBetweenLetters;
+
     private void Awake() {
     }
 
@@ -21,7 +26,7 @@ public class IntroCutscene : MonoBehaviour {
     void Start() {
         index = 0;
         sceneIndex = 0;
-        text.text = allTextos[index];
+        typer.TypeText(allTextos[index], DelayBetweenLetters);
         allScenes[sceneIndex].SetActive(true);
         isDone = false;
     }
@@ -42,8 +47,10 @@ public class IntroCutscene : MonoBehaviour {
                 if (sceneIndex < allScenes.Count)
                     allScenes[sceneIndex].SetActive(true);
 
-                if (index < allTextos.Count)
-                    text.text = allTextos[index];
+                if (index < allTextos.Count) {
+                    typer.TypeText(allTextos[index], DelayBetweenLetters);
+
+                }
             } else {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }

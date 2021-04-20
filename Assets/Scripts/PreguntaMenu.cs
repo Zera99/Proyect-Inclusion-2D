@@ -81,7 +81,7 @@ public class PreguntaMenu : MonoBehaviour {
 
     public void Disappear(bool correct) {
         isAnswering = false;
-        currentPersona.FinishQuestion();
+        currentPersona.FinishQuestion(correct);
         menu.gameObject.SetActive(false);
         timeLeft = maxTime;
 

@@ -79,7 +79,10 @@ public class Persona : MonoBehaviour {
 
     }
 
-    public void FinishQuestion() {
+    public void FinishQuestion(bool correct) {
+        if (!correct)
+            globito.SetActive(false);
+
         speed = maxSpeed;
         spawner.StopAnswering();
         importer.RemovePregunta(this.pregunta);
