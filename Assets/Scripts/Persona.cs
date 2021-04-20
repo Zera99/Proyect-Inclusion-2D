@@ -11,6 +11,8 @@ public class Persona : MonoBehaviour {
     public PersonaSpawner spawner;
 
     SpriteRenderer _sr;
+    Color originalColor;
+    public Color onMouseOverColor;
     public GameObject globito;
 
     Vector3 Direction;
@@ -27,7 +29,7 @@ public class Persona : MonoBehaviour {
         globitoAnimator = globito.GetComponent<Animator>();
         importer = FindObjectOfType<QuestionImporter>();
         menu = FindObjectOfType<PreguntaMenu>();
-
+        originalColor = _sr.color;
 
     }
 
@@ -114,4 +116,12 @@ public class Persona : MonoBehaviour {
         globitoAnimator.Play("GlobitoCorrecto");
     }
 
+    private void OnMouseEnter() {
+        if(hasIssue)
+            _sr.color = onMouseOverColor;
+    }
+
+    private void OnMouseExit() {
+        _sr.color = originalColor;
+    }
 }

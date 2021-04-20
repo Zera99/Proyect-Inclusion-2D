@@ -62,7 +62,7 @@ public class PersonaSpawner : MonoBehaviour {
                     Debug.Log("Has issue");
                     p.hasIssue = true;
                     internalCounter = 0;
-                    counterTarget = Random.Range(0, 3);
+                    counterTarget = Random.Range(1, 4);
                 }
 
                 switch (Random.Range(0, 2)) { // 0 inclusive, 2 exclusive, 0-1 range
