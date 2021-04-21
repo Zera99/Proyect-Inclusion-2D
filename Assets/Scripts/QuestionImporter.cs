@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
+using UnityEngine.Networking;
 
 public class QuestionImporter : MonoBehaviour {
 
-    string PreguntasPath = "Assets/Resources/Preguntas.json";
-    string EstereotiposPath = "Assets/Resources/Estereotipos.json";
+    string PreguntasPath = System.IO.Path.Combine(Application.streamingAssetsPath, "Preguntas.json");
+    string EstereotiposPath = System.IO.Path.Combine(Application.streamingAssetsPath, "Estereotipos.json");
     string PreguntaJson;
     string EstereotipoJson;
     public PreguntasObject AllPreguntas;
@@ -20,14 +21,25 @@ public class QuestionImporter : MonoBehaviour {
     public List<PreguntaBase> preguntasInUse;
 
     private void Awake() {
-        StreamReader preguntasReader = new StreamReader(PreguntasPath);
-        StreamReader estereotipoReader = new StreamReader(EstereotiposPath);
-        PreguntaJson = preguntasReader.ReadToEnd();
-        EstereotipoJson = estereotipoReader.ReadToEnd();
+        StartCoroutine(GetJson());
+    }
+
+    IEnumerator GetJson() {
+        WWW www = new WWW(PreguntasPath);
+        yield return www;
+        PreguntaJson = www.text;
+
+        WWW www2 = new WWW(EstereotiposPath);
+        yield return www;
+        EstereotipoJson = www.text;
+
+
         AllPreguntas = JsonUtility.FromJson<PreguntasObject>(PreguntaJson);
         AllEstereotipos = JsonUtility.FromJson<PreguntasObject>(EstereotipoJson);
         personaSpawner = FindObjectOfType<PersonaSpawner>();
         preguntasInUse = new List<PreguntaBase>();
+
+        personaSpawner.BeginGame();
     }
 
     public PreguntaBase GetPregunta(Persona p) {
@@ -81,5 +93,6 @@ public class QuestionImporter : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
     }
+
 
 }

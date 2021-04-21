@@ -21,9 +21,10 @@ public class PersonaSpawner : MonoBehaviour {
     public bool isAnswering;
     int lastSpriteIndex;
 
-    private void Start() {
+    public void BeginGame() {
         StartSpawning();
     }
+
 
     IEnumerator SpawnPersonCoroutine() {
         int internalCounter = 0;
