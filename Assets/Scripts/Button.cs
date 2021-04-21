@@ -15,7 +15,7 @@ public class Button : MonoBehaviour
     }
 
     public void LoadCredits() {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     public void Exit() {

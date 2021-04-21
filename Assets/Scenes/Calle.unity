@@ -2231,7 +2231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d09dc6be1fa5b439014c34c46f8afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AllPreguntas:
+    Preguntas: []
+  AllEstereotipos:
+    Preguntas: []
   personaSpawner: {fileID: 1585769619}
+  preguntasInUse: []
 --- !u!4 &494224180
 Transform:
   m_ObjectHideFlags: 0
@@ -3889,7 +3894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870451810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.17, y: -7.67, z: 11.279481}
+  m_LocalPosition: {x: 12.17, y: -7.8, z: 11.279481}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1809834740}
@@ -7418,6 +7423,7 @@ MonoBehaviour:
   - -4.218
   - -3.278
   - -2.075
+  AnsweredQuestions: 0
   isAnswering: 0
 --- !u!1001 &1599408703
 PrefabInstance:
@@ -8852,7 +8858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966166865}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.0699997, y: -7.67, z: 11.279481}
+  m_LocalPosition: {x: 6.0699997, y: -7.8, z: 11.279481}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1809834740}
