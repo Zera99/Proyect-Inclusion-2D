@@ -152,11 +152,16 @@ MonoBehaviour:
   hasIssue: 0
   isAdult: 0
   importer: {fileID: 0}
+  pregunta:
+    Pregunta: 
+    RespuestaCorrecta: 
+    RespuestaA: 
+    RespuestaB: 
   menu: {fileID: 0}
   spawner: {fileID: 0}
   onMouseOverColor: {r: 0.764151, g: 0.3135903, b: 0.57220453, a: 1}
   globito: {fileID: 5461466044909206651}
-  maxSpeed: 3
+  maxSpeed: 2.5
   speed: 0
 --- !u!212 &7387243726311595408
 SpriteRenderer:

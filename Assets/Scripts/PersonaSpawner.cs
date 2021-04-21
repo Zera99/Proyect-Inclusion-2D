@@ -15,6 +15,8 @@ public class PersonaSpawner : MonoBehaviour {
     public float maxX;
     public List<float> yPositions;
 
+    public int AnsweredQuestions;
+
     bool isSpawning;
     public bool isAnswering;
     int lastSpriteIndex;
@@ -120,4 +122,5 @@ public class PersonaSpawner : MonoBehaviour {
         yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
 }

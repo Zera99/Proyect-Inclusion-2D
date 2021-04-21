@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ResultsScreen : MonoBehaviour {
-    public Image ResultadoBueno;
-    public Image ResultadoMeh;
-    public Image ResultadoMalo;
+    public GameObject ResultadoBueno;
+    public GameObject ResultadoMeh;
+    public GameObject ResultadoMalo;
     public PlayerSO playerData;
 
 
     private void Awake() {
-        if (playerData.TotalScore == 20) {
-            ResultadoBueno.enabled = true;
-        } else if (playerData.TotalScore >= 8) {
-            ResultadoMeh.enabled = true;
+        if (playerData.TotalScore >= 14) {
+            ResultadoBueno.SetActive (true);
+        } else if (playerData.TotalScore >= 7) {
+            ResultadoMeh.SetActive (true);
         } else {
 
-            ResultadoMalo.enabled = true;
+            ResultadoMalo.SetActive (true);
         }
     }
 }

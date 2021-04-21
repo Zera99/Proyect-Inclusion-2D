@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: d3279802b0a506045b301d373810c89a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1090905023520887668
+    second: Estatico_4_0
+  - first:
+      213: 3627434760264015660
+    second: Estatico_4_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +102,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Estatico_4_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 13
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaed99f420a5ee4399662565014c48d
+      internalID: -1090905023520887668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatico_4_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 13
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad50a7b816d8e6469765ddbf5b0ea2d
+      internalID: 3627434760264015660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

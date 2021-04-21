@@ -6,7 +6,7 @@ public class Persona : MonoBehaviour {
     public bool hasIssue;
     public bool isAdult;
     public QuestionImporter importer;
-    PreguntaBase pregunta;
+    public PreguntaBase pregunta;
     public PreguntaMenu menu;
     public PersonaSpawner spawner;
 
@@ -97,6 +97,9 @@ public class Persona : MonoBehaviour {
 
     IEnumerator DespawnPersona() {
         yield return new WaitForSeconds(2.0f);
+        if (hasIssue)
+            importer.ReleaseQuestion(this.pregunta);
+
         spawner.RemovePersona(this);
         Destroy(this.gameObject);
     }

@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 2f323ff0908a34b4c8ecc2b154b03e3d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2757533609866577236
+    second: Mariposa_0
+  - first:
+      213: 5962227690911604542
+    second: Mariposa_1
+  - first:
+      213: 1322419274125253233
+    second: Mariposa_2
+  - first:
+      213: -8446525013206091360
+    second: Mariposa_3
+  - first:
+      213: 8373483091536141217
+    second: Mariposa_4
+  - first:
+      213: -3099226371610054850
+    second: Mariposa_5
+  - first:
+      213: 8599588236051664509
+    second: Mariposa_6
+  - first:
+      213: 7153898529064834987
+    second: Mariposa_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +120,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mariposa_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68880d0c7fcb94e4c85767203a2b60b7
+      internalID: 2757533609866577236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdba60426ed7f4142b2245d02b10a654
+      internalID: 5962227690911604542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6acc8e08369b3a4ebe74a1874585739
+      internalID: 1322419274125253233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78344c727dd08443b010e9f47bc17ff
+      internalID: -8446525013206091360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323f1f6386a6fad45a0e092e245dfc84
+      internalID: 8373483091536141217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5265827b90b5f4847941bbacc53b6e63
+      internalID: -3099226371610054850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_6
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f60cc81312ffb346b5133718f9fa62f
+      internalID: 8599588236051664509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mariposa_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 15
+        width: 117
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac2ade6c90702c45ba68792a6ffb9f0
+      internalID: 7153898529064834987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
