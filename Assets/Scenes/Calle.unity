@@ -1184,8 +1184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 135}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 22.20002, y: 132}
+  m_SizeDelta: {x: 137.8, y: 34.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320795800
 MonoBehaviour:
@@ -1209,16 +1209,16 @@ MonoBehaviour:
     letra y entonces entra perfecto siempre en este cuadro de dialogo de preguntas
     para preguntas extra super largas"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5, type: 2}
-  m_sharedMaterial: {fileID: -5878082842481617238, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5,
+  m_fontAsset: {fileID: 11400000, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a, type: 2}
+  m_sharedMaterial: {fileID: 3454016553528365250, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1236,13 +1236,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24.8
+  m_fontSize: 26
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 17
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -200.97452, y: -22.581463, z: -238.23367, w: -48.550022}
+  m_margin: {x: -163.40695, y: -22.581463, z: -121.37456, w: -48.550022}
   m_textInfo:
     textComponent: {fileID: 320795800}
     characterCount: 182
@@ -1284,7 +1284,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 5
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2348,7 +2348,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1186317830}
   m_Father: {fileID: 1090890503}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2378,16 +2379,16 @@ MonoBehaviour:
   m_text: Una respuesta super super larga que puede llegar a causar muchos muchos
     problemas porque justamente es demasiado larga
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5, type: 2}
-  m_sharedMaterial: {fileID: -5878082842481617238, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5,
+  m_fontAsset: {fileID: 11400000, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a, type: 2}
+  m_sharedMaterial: {fileID: 3454016553528365250, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2405,14 +2406,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
+  m_fontSize: 20.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 16
   m_fontSizeMax: 24
-  m_fontStyle: 0
-  m_textAlignment: 258
+  m_fontStyle: 17
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2443,7 +2444,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 76.9191, w: -9.865803}
+  m_margin: {x: -40.700573, y: 3.502502, z: 51.973606, w: 4.68867}
   m_textInfo:
     textComponent: {fileID: 582986610}
     characterCount: 118
@@ -2451,7 +2452,7 @@ MonoBehaviour:
     spaceCount: 17
     wordCount: 18
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2460,7 +2461,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1186317831}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -4121,8 +4122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.999989, y: -111.26}
-  m_SizeDelta: {x: 751.2, y: 60.19}
+  m_AnchoredPosition: {x: -1.9999847, y: -25.5}
+  m_SizeDelta: {x: 517.7, y: 41.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979558418
 MonoBehaviour:
@@ -4160,9 +4161,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8962264, g: 0.3931559, b: 0.3931559, a: 0.7058824}
+    m_PressedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.47058824}
+    m_SelectedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.6156863}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4182,7 +4183,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979558418}
+      - m_Target: {fileID: 1494331123}
         m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
@@ -4263,8 +4264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 46.000034, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 46.00003, y: 0.87999916}
+  m_SizeDelta: {x: 0, y: -7.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991957055
 MonoBehaviour:
@@ -4287,16 +4288,16 @@ MonoBehaviour:
   m_text: Una respuesta super super larga que puede llegar a causar muchos muchos
     problemas porque justamente es demasiado larga
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5, type: 2}
-  m_sharedMaterial: {fileID: -5878082842481617238, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5,
+  m_fontAsset: {fileID: 11400000, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a, type: 2}
+  m_sharedMaterial: {fileID: 3454016553528365250, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4314,14 +4315,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
+  m_fontSize: 20.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 16
   m_fontSizeMax: 24
-  m_fontStyle: 0
-  m_textAlignment: 258
+  m_fontStyle: 17
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -4352,7 +4353,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 72.12421, w: -9.865803}
+  m_margin: {x: -40.660713, y: 0.25858137, z: 51.11749, w: 0.21112551}
   m_textInfo:
     textComponent: {fileID: 991957055}
     characterCount: 118
@@ -4360,7 +4361,7 @@ MonoBehaviour:
     spaceCount: 17
     wordCount: 18
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -5059,8 +5060,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28, y: -204.38}
-  m_SizeDelta: {x: 751.2, y: 60.19}
+  m_AnchoredPosition: {x: -2, y: -83.2}
+  m_SizeDelta: {x: 517.7, y: 41.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090890504
 MonoBehaviour:
@@ -5098,9 +5099,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8962264, g: 0.3931559, b: 0.3931559, a: 0.7058824}
+    m_PressedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.47058824}
+    m_SelectedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.6156863}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5120,7 +5121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1090890504}
+      - m_Target: {fileID: 1494331123}
         m_MethodName: OnClick
         m_Mode: 2
         m_Arguments:
@@ -5482,6 +5483,78 @@ Transform:
   m_Father: {fileID: 1809834740}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1186317829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186317830}
+  - component: {fileID: 1186317832}
+  - component: {fileID: 1186317831}
+  m_Layer: 5
+  m_Name: TMP SubMeshUI [alberto-pixelfont55 SDF Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1186317830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186317829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 582986609}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1186317831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186317829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 0
+  m_canvasRenderer: {fileID: 1186317832}
+  m_TextComponent: {fileID: 582986610}
+  m_materialReferenceIndex: 1
+--- !u!222 &1186317832
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186317829}
+  m_CullTransparentMesh: 0
 --- !u!1 &1194245846
 GameObject:
   m_ObjectHideFlags: 0
@@ -6218,7 +6291,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405064227}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6227,8 +6300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.8, y: -15.3}
-  m_SizeDelta: {x: 891.5, y: 488}
+  m_AnchoredPosition: {x: -0.20000076, y: -18.199997}
+  m_SizeDelta: {x: 658.8, y: 511.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405064229
 MonoBehaviour:
@@ -6243,12 +6316,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3347023, g: 0.028390888, b: 0.5471698, a: 0.16862746}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b9bfde80b0a50ca4e9dc118930656f28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6588,8 +6661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.00002, y: -20.46}
-  m_SizeDelta: {x: 751.2, y: 60.19}
+  m_AnchoredPosition: {x: -1.9999847, y: 30.700012}
+  m_SizeDelta: {x: 517.7, y: 41.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494331123
 MonoBehaviour:
@@ -6627,9 +6700,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8962264, g: 0.3931559, b: 0.3931559, a: 0.7058824}
+    m_PressedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.9019608}
+    m_SelectedColor: {r: 0.3254902, g: 0, b: 0.58431375, a: 0.6156863}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6914,16 +6987,16 @@ MonoBehaviour:
   m_text: Una respuesta super super larga que puede llegar a causar muchos muchos
     problemas porque justamente es demasiado larga
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5, type: 2}
-  m_sharedMaterial: {fileID: -5878082842481617238, guid: 6dcd9e18826295a4e8f5b3b6dc9aaec5,
+  m_fontAsset: {fileID: 11400000, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a, type: 2}
+  m_sharedMaterial: {fileID: 3454016553528365250, guid: 4f01eeaf72b29cf4fa8fc8d1e16d2f2a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6941,14 +7014,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24
+  m_fontSize: 20.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 16
   m_fontSizeMax: 24
-  m_fontStyle: 0
-  m_textAlignment: 258
+  m_fontStyle: 17
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -6979,7 +7052,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 75.66071, w: -9.865803}
+  m_margin: {x: -39.790577, y: 3.9402885, z: 51.59045, w: 4.1442046}
   m_textInfo:
     textComponent: {fileID: 1569688238}
     characterCount: 118
@@ -6987,7 +7060,7 @@ MonoBehaviour:
     spaceCount: 17
     wordCount: 18
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

@@ -7,8 +7,8 @@
       "RespuestaC": "MalC"
     },
     {
-      "Pregunta": "Mi familia piensa que soy raro (gay) porque no tengo novia",
-      "RespuestaCorrecta": "Es un asunto personal y solo vos podés decir si querés o no",
+      "Pregunta": "Mi familia piensa que soy raro porque no tengo novia",
+      "RespuestaCorrecta": "Es un asunto personal y sólo vos podés decir si querés o no",
       "RespuestaA": "Tenés que esforzarte por conocer a alguien",
       "RespuestaB": "Capaz piensan que te sentís solo",
       "RespuestaC": "Muy mal"
@@ -16,7 +16,7 @@
 	 {
       "Pregunta": "El futbol es para hombres",
       "RespuestaCorrecta": "Los deportes son para todos",
-      "RespuestaA": "Solo conozco a hombres que lo juegan",
+      "RespuestaA": "Sólo conozco a hombres que lo juegan",
       "RespuestaB": "Me gusta más el tenis",
       "RespuestaC": "Muy mal"
     },
@@ -37,7 +37,7 @@
 	 {
       "Pregunta": "Me parece raro que mi hermano salga con otro hombre",
       "RespuestaCorrecta": "El amor no tiene género, lo que importa es la felicidad",
-      "RespuestaA": "Quizás son solo amigos ",
+      "RespuestaA": "Quizás son solo amigos",
       "RespuestaB": "Quizás no encontró a la mujer indicada",
       "RespuestaC": "Muy mal"
     },
@@ -49,7 +49,7 @@
       "RespuestaC": "Muy mal"
     },
 	 {
-      "Pregunta": "Quiero que mi novia solo me hable a mí",
+      "Pregunta": "Quiero que mi novia sólo me hable a mí",
       "RespuestaCorrecta": "Ser celoso sólo va a hacer que se aleje",
       "RespuestaA": "Si se lo pedís, capaz lo haga",
       "RespuestaB": "Capaz está aburrida",
@@ -63,7 +63,7 @@
       "RespuestaC": "Muy mal"
     },
 	 {
-      "Pregunta": "Solo existen dos géneros",
+      "Pregunta": "Sólo existen dos géneros",
       "RespuestaCorrecta": "Las personas pueden identificarse de más de dos maneras",
       "RespuestaA": "Solo se ven dos géneros",
       "RespuestaB": "Según algunos libros, si",

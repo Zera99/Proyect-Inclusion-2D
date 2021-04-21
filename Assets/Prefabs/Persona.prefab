@@ -154,7 +154,7 @@ MonoBehaviour:
   importer: {fileID: 0}
   menu: {fileID: 0}
   spawner: {fileID: 0}
-  onMouseOverColor: {r: 0.745283, g: 0.2214756, b: 0.26287237, a: 0.84705883}
+  onMouseOverColor: {r: 0.764151, g: 0.3135903, b: 0.57220453, a: 1}
   globito: {fileID: 5461466044909206651}
   maxSpeed: 3
   speed: 0
