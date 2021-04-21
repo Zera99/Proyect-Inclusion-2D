@@ -57,6 +57,7 @@ public class PersonaSpawner : MonoBehaviour {
                     lastSpriteIndex = newIndex;
 
                 }
+
                 Debug.Log("Int: " + internalCounter + " - Count: " + counterTarget);
                 if (internalCounter >= counterTarget) {
                     Debug.Log("Has issue");

@@ -12,7 +12,7 @@ public class Respuesta : MonoBehaviour
 
 
     public void OnClick(PreguntaMenu menu) {
-
+        Debug.Log("Es correcta: " + isCorrect);
         if(isCorrect) {
             Debug.Log("It's correct");
             scores.AddScore();
